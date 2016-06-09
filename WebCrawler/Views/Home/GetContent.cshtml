@@ -1,0 +1,18 @@
+﻿@model WebCrawler.Models.Html
+
+@{
+    ViewBag.Title = "GetContent";
+}
+
+<div>
+    <h2>Html</h2>
+    <hr />
+    @{ 
+        foreach (string content in Model.contentList)
+        {
+            @Html.Raw(content)
+            <br />
+        }
+    }
+</div>
+
